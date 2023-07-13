@@ -125,17 +125,19 @@ img {
   letter-spacing: 0.02em;
 }
 .current {
+  color: var(--ocean, #404bbf);
   position: relative;
+
 }
 .current::after {
-  content: '';
+  content: "";
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
   width: 100%;
   height: 4px;
   border-radius: 2px;
-  color: var(--ocean);
+  background-color: var(--ocean);
 }
 .address {
   font-style: normal;
@@ -304,6 +306,9 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.team-icons-list {
+  display: inline-flex;
   gap: 24px;
 }
 .team-icon-circle {
@@ -337,9 +342,11 @@ img {
   display: flex;
   align-items: center;
   justify-items: center;
-  /* margin-top: 72px; */
 }
-
+.customers-icon-list{
+display: inline-flex;
+gap: 24px;
+}
 .customers-icon {
   fill: var(--lightslate);
 }
@@ -391,6 +398,10 @@ img {
   align-items: center;
   gap: 16px;
   margin-top: 16px;
+}
+.footer-icons-list {
+  display: inline-flex;
+  gap: 16px;
 }
 .footer-icon-circle {
   width: 40px;
