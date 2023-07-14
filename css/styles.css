@@ -363,7 +363,7 @@ img {
   padding: 120px 0;
 }
 .customers-icon-list {
-  display: inline-flex;
+  display: flex;
   gap: 24px;
   width: 100%;
 }
@@ -407,6 +407,7 @@ img {
 }
 .container-footer {
   display: flex;
+  align-items: baseline;
   gap: 120px;
 }
 .footer-logo {
@@ -423,10 +424,12 @@ img {
 .footer-block {
   margin-bottom: 16px;
   display: flex;
+  margin-right: 120px;
 }
 .footer-text {
   display: block;
   max-width: 264px;
+
 }
 .footter-logo-accent {
   color: var(--cloud, #f4f4fd);
@@ -439,31 +442,36 @@ img {
   text-transform: uppercase;
   display: inline-block;
 }
-.footer-icons-block {
+
+.social-text{
+font-weight: 500;
+color: var(--white);
+margin-bottom: 16px;
+}
+
+.footer-icons-list {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 16px;
-  margin-top: 16px;
-}
-.footer-icons-list {
-  display: inline-flex;
   gap: 16px;
 }
 .footer-icon-circle {
   width: 40px;
   height: 40px;
-  border-radius: 50%;
+}
+
+.footer-icon-link{
+  width: 100%;
+  height: 100%;
   background-color: var(--iris);
+  border-radius: 50%;
   display: flex;
   align-items: center;
-  justify-items: center;
+  justify-content: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: background-color;
 }
-.footer-icon-circle:hover,
-.footer-icon-circle:focus {
+.footer-icon-link:hover,
+.footer-icon-link:focus {
   background-color: var(--green);
 }
 .footer-icon {
