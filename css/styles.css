@@ -399,6 +399,7 @@ img {
 .customers-icon:focus {
   fill: var(--ocean);
 }
+
 .footer {
   background: var(--navyblue, #2e2f42);
   color: var(--cloud, #f4f4fd);
