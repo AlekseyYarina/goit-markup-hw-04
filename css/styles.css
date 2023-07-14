@@ -61,6 +61,7 @@ img {
 }
 .header {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .header-container {
   display: flex;
@@ -219,13 +220,11 @@ img {
   min-width: 169px;
   height: 56px;
   border: 1px solid transparent;
-  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: background;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-index:hover,
 .button-index:focus {
-  background: var(--ocean, #404bbf);
+  background-color: var(--ocean, #404bbf);
   color: var(--white, #fff);
   font-size: 16px;
   font-family: "Roboto", sans-serif;
@@ -246,7 +245,7 @@ img {
 .section-two-item {
   width: calc((100% - 24px * 3) / 4);
 }
-.section2-icon-block {
+.sectiontwo-icon-block {
   width: 264px;
   height: 112px;
   border-radius: 4px;
@@ -254,7 +253,11 @@ img {
   margin-bottom: 8px;
   display: flex;
   align-items: center;
-  justify-items: center;
+  justify-content: center;
+}
+.section2-icon{
+  widht: 64px;
+  height: 64px;
 }
 .section-title-item {
   color: var(--navyblue, #2e2f42);
@@ -340,6 +343,8 @@ img {
 }
 .social-icon {
   fill: var(--cloud);
+  width: 16px;
+  height: 16px;
 }
 .p-style {
   font-size: 16px;
@@ -378,6 +383,8 @@ gap: 24px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: fill;
+  width: 104px;
+  height: 56px;
 }
 .customers-icon:hover,
 .customers-icon:focus{
@@ -451,6 +458,8 @@ gap: 24px;
 }
 .footer-icon {
   fill: var(--cloud);
+  width: 24px;
+  height: 24px;
 }
 .container-portfolio {
   display: flex;
@@ -588,6 +597,8 @@ position: relative;
   cursor: pointer;
 }
 .modal-icon{
+  width: 8px;
+  height: 8px;
   fill: var(--navyblue);
   position: absolute;
   left: 50%;
