@@ -256,8 +256,8 @@ img {
   justify-content: center;
 }
 .section2-icon{
-  widht: 64px;
   height: 64px;
+  width: 64px;
 }
 .section-title-item {
   color: var(--navyblue, #2e2f42);
